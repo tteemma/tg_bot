@@ -40,6 +40,7 @@
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
 2. Создайте файл конфигурации cfg/main.yaml:
+```bash
   bot_url: "https://your-domain.com"
   db_file: "bot.db"
   messages:
@@ -52,9 +53,14 @@
       default: "Произошла ошибка."
       invalid_url: "Некорректный URL."
       unable_to_save: "Не удалось сохранить ссылку."
+```
 3. Установите переменные окружения:
+```bash
   export TELEGRAM_TOKEN="your-telegram-bot-token"
   export POCKET_CONSUMER_KEY="your-pocket-consumer-key"
   export AUTH_SERVER_URL="https://your-domain.com"
+```
 4. Запустите бота:
+ ```bash
   go run main.go
+  ```
